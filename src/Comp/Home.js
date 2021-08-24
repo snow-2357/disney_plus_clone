@@ -5,13 +5,15 @@ import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
 
 import Viewers from "./Viewers";
+import Movies from "./Movies";
 
 function Home() {
   return (
     <Container>
-      home
+     
       <ImgSlider></ImgSlider>
       <Viewers />
+      <Movies />
     </Container>
   );
 }
@@ -33,7 +35,7 @@ const Container = styled.main`
     left: 0;
     right: 0;
     bottom: 0;
-    
+
     z-index: -1;
   }
 `;
