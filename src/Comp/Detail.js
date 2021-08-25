@@ -30,6 +30,15 @@ function Detail() {
                 <AddBtn><span>+</span></AddBtn>
                 <GroupAdd><img src="/images/group-icon.png" alt="" srcset="" /></GroupAdd>
             </Controls>
+            <Subtitle>
+              2018 • 2h 45m • Family, Fantasy, Kids, Animation
+            </Subtitle>
+            <Bio>
+            Set in a beautiful seaside town on the Italian Riviera, 
+            the original animated feature is a coming-of-age story about one young boy experiencing an unforgettable summer filled with gelato, pasta and endless scooter rides. Luca shares these adventures with his newfound best friend, but all the fun is threatened by a deeply 
+            held secret: he is a sea monster from another world just 
+            below the water's surface.
+            </Bio>
         </Container>
     );
 }
@@ -124,3 +133,12 @@ const GroupAdd = styled(AddBtn)`
   background-color: rgba(0, 0, 0, 0.7);
 `;
 
+const Subtitle = styled.div`
+  padding: 15px 0px 5px 10px;
+  font-size: small;
+  color: rgba(249, 249, 249, 0.8);
+`;
+const Bio = styled.div`
+  width: 70%;
+  font-size: 17px;
+`;
