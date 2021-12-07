@@ -10,7 +10,8 @@ function Login() {
               <Signup>Get the Disney bundel</Signup>
               <h5>Stream now.  <spam>Terms apply.</spam></h5>
               <Logo2 src="/images/cta-logo-two.png"></Logo2>
-              <h3><spam>Sign up for Disney+ only.</spam></h3>
+              <a href="/"><h3><spam>Sign up for Disney+ only.</spam></h3></a>
+              
             </Main>
         </Container>
     )
@@ -51,7 +52,7 @@ const Main = styled.div`
   h3{
     padding: 7px;
     spam{
-        border-bottom: 1px solid white;
+        //border-bottom: 1px solid white;
     }
   }
   h5{

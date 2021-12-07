@@ -31,7 +31,10 @@ function Header() {
           <span>SERIES</span>
         </a>
       </NavMenu>
+      <a href="/login">
       <UserImg src="https://i.pinimg.com/originals/1b/b1/ce/1bb1ce18e462e082be06158d2f39dd59.jpg"></UserImg>
+      </a>
+     
     </Nav>
   );
 }

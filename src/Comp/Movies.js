@@ -1,34 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import Movie from './Movie';
 
 function Movies() {
+
+  
+
+  let numbers=[{key:1},{key:2},{key:3},{key:4},{key:5},{key:6},{key:7},{key:8}];
     return (
       <Container>
         <h4> Recomended for You </h4>
         <Content>
-
-          <Wrap >
-            <img src="/images/xxx.png" alt="" />
-          </Wrap>
-
-          <Wrap>
-            <img
-              src="https://sm.ign.com/t/ign_za/review/s/spider-man/spider-man-far-from-home-review_2bsb.1024.jpg"
-              alt=""
-            />
-          </Wrap>
-          <Wrap>
-            <img
-              src="https://sm.ign.com/t/ign_za/review/s/spider-man/spider-man-far-from-home-review_2bsb.1024.jpg"
-              alt=""
-            />
-          </Wrap>
-          <Wrap>
-            <img
-              src="https://sm.ign.com/t/ign_za/review/s/spider-man/spider-man-far-from-home-review_2bsb.1024.jpg"
-              alt=""
-            />
-          </Wrap>
+          {numbers.map(num=>
+            <Movie key={num.key} number={num.key}/> 
+          )}
+          
         </Content>
       </Container>
     );
@@ -45,23 +31,4 @@ const Content = styled.div`
   grid-gap: 30px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   padding-bottom:50px ;
-`;
-const Wrap = styled.div`
-cursor: pointer;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 3px solid rgba(249, 249, 249, 0.1);
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  transition : all 50ms cubic-bezier(.17,.67,.3,.83);
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  &:hover {
-    /* transform: scale(1.0); */
-    border-color: rgba(249, 249, 249, 0.6);
-    box-shadow: rgb(249, 249, 249, 0.1) 0px 20px 30px -10px;
-    
-  }
 `;

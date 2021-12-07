@@ -15,7 +15,6 @@ function App() {
       <Router>
         {/* <Header /> */}
         <Switch>
-
         <Route path="/login">
             <Login />
           </Route>
@@ -25,8 +24,8 @@ function App() {
             <Detail />
           </Route>
 
-          <Route path="/">
-          <Header />
+          <Route exact path="/">
+            <Header />
             <Home />
           </Route>
 
